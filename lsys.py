@@ -15,7 +15,7 @@ def execute(line):
       if c == defs[c]:
         result += c
       else:
-        result += execute(defs[c])
+        result += c + execute(defs[c])
     else: 
       result += c
   return result
